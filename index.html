@@ -29,17 +29,39 @@
       <p><i class="material-icons">calendar_today</i> July 20</p>
       <p><i class="material-icons">location_city</i> Accra, Ghana</p>
       <!-- ADD THE RSVP BUTTON HERE -->
+      <button id="startRsvp">RSVP</button>
     </section>
+  
+    <section id="firebaseui-auth-container"></section>
+  </section>
 
-    <hr />
+  <hr />
 
     <section id="firebaseui-auth-container"></section>
 
     <section id="description-container">
       <h2>Are you ready?</h2>
       <p>Join us for an exciting experience!</p>
+      <p id="number-attending"></p>
     </section>
 
-    <section id="guestbook-container"></section>
+    <section id="guestbook-container">
+    <h2>Are you attending?</h2>
+      <button id="rsvp-yes">YES</button>
+      <button id="rsvp-no">NO</button>
+    <h2>Discussion</h2>
+
+      <form id="leave-message">
+        <label>Leave a message: </label>
+        <input type="text" id="message" />
+        <button type="submit">
+          <i class="material-icons">send</i>
+          <span>SEND</span>
+        </button>
+      </form>
+
+      <section id="guestbook"></section>
+
+    </section>
   </div>
 </body>
